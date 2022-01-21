@@ -1,3 +1,237 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Oswald&display=swap');
 /* font-family: 'Heebo', sans-serif;
 font-family: 'Oswald', sans-serif; */
+/*#dc4e57 #ffd020 #f6efec */
+*{
+    padding:0px;
+    margin: 0px;
+    
+}
+
+body{
+    background-color: #f6efec;
+    margin: 0 0 ;
+    line-height: 20px;
+}
+section#main{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+ 
+    padding: 100px 80px 100px 80px ;
+
+}
+main#mainContent{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    width: -webkit-fill-available;
+}
+/*shopping cart*/
+div.cart{
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    background-color: #ffffff;
+
+}
+div.order{
+    grid-column:2/3 ;
+    background-color: #dc4e57;
+}
+table {
+    border-spacing: 0em;
+}
+td{
+    padding:1em;
+}
+div.cart  h1 {
+    color:#dc4e57 ;
+    margin-bottom:1.5em ;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 1.5em;
+    padding-left: 1em;
+}
+div.flex{
+    display: flex;
+    flex-direction: column;
+}
+th{
+    padding-left: 2em;
+    
+}
+tr th{
+    font-weight: bolder;
+
+}
+tr:nth-child(even){
+    background-color: #f6efec;
+}
+tr.name{
+    text-align: left ;
+    font-family: 'Heebo', sans-serif;
+
+}
+td.image{
+    display: flex ;
+    width: 100px;
+
+}
+td.image p{
+    padding-top: 3em;
+    padding-left: 1em;
+    font-weight: bolder;
+
+    font-family: 'Heebo', sans-serif;
+}
+tr div.cartInfo{
+            background-color: #f6efec ;
+        }
+.quantity{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    
+}
+input#number{
+    max-width: 2em;
+}
+.price{
+    font-weight: bolder;
+}
+.total_delete p {
+    font-weight: bolder;
+    padding-bottom: 0.5em;
+    padding-top: 1.8em;
+ 
+}
+
+.back_link{
+    display:flex;
+    padding-bottom: 1em;
+
+}
+.back_link p {
+    padding-left: 0.2em;
+    font-weight: bolder;
+    color:#dc4e57 ;
+    font-family: 'Heebo', sans-serif;
+  
+}
+.back_link a{
+    border: none;
+    background: none;
+    color:#dc4e57 ;
+    padding-left: 2em;
+    width: 1.5em;
+
+
+}
+/*order Summary*/
+div.order h1{
+    color: #ffffff;
+    font-family: 'Heebo', sans-serif;
+        font-size: 1.5em;
+    padding-top: 1.5em;
+    text-align: center;
+
+}
+.sold{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 2.8em;
+    font-family: 'Heebo', sans-serif;
+    color: #ffffff;
+    font-weight: bolder;
+
+ 
+}
+.Buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    padding-right: 10em;
+    margin-top: 6em;
+    font-family: 'Heebo', sans-serif;
+    color: #ffffff;
+
+}
+input#code {
+    width: 16em;
+    margin-top: 1.5em;
+    text-align: center;
+}
+.Buy button{
+box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border:1px solid #ffaa22;
+	display:inline-block;
+    font-family: 'Heebo', sans-serif;
+margin-right: 11em;
+margin-top: 1.5em;
+	cursor:pointer;
+	color:#333333;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+	button:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+.Buy p {
+    margin-top: 10em;
+    color: #ffec64;
+}
+
+.check{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .check p {
+     margin-top: 4em;
+     font-weight: bolder;
+
+     font-family: 'Heebo', sans-serif
+ }
+ .check button{
+    margin-top: 2em;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border:1px solid #ffaa22;
+	display:inline-block;
+    font-family: 'Heebo', sans-serif;
+margin-right: 4em;
+	cursor:pointer;
+	color:#333333;
+	font-size:15px;
+	font-weight:bold;
+	padding:2px 64px;
+	text-decoration:none;
+    font-weight: bolder;
+
+    text-shadow:0px 1px 0px #ffee66;
+ }
+ button:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
